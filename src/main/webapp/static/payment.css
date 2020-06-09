@@ -1,0 +1,400 @@
+ 
+ @import url(https://fonts.googleapis.com/css?family=Roboto:400,300,600,400italic);
+ 
+ button:focus { 
+    outline-color: black; 
+}
+
+#checkoutAccordion button.card-header {
+	background: #077915;
+}
+
+#checkoutAccordion button:hover {
+	background: #4ad65b;
+}
+
+	
+.media-heading{
+	font-size:14px;
+	font-weight:bold;
+	padding: 17px 0px 0px 22px;
+}
+#address input[type="text"],
+#address input[type="email"],
+#address input[type="tel"],
+#address input[type="url"],
+#address textarea,
+#address button[type="submit"] {
+  font: 400 12px/16px "Roboto", Helvetica, Arial, sans-serif;
+}
+
+#address {
+  background: #F9F9F9;
+  padding: 25px;
+  box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.2), 0 5px 5px 0 rgba(0, 0, 0, 0.24);
+}
+
+#address h3 {
+  display: block;
+  font-size: 30px;
+  font-weight: 300;
+  margin-bottom: 10px;
+}
+
+#address h4 {
+  margin: 5px 0 15px;
+  display: block;
+  font-size: 13px;
+  font-weight: 400;
+}
+
+fieldset {
+  border: medium none !important;
+  margin: 0 0 10px;
+  min-width: 100%;
+  padding: 0;
+  width: 100%;
+}
+
+.addressId{
+  width: 100%;
+  margin: 0 auto;
+  position: relative;
+
+}
+
+#address input[type="text"],
+#address input[type="email"],
+#address input[type="tel"],
+#address input[type="url"],
+#address textarea {
+  width: 100%;
+  border: 1px solid #ccc;
+  background: #FFF;
+  margin: 0 0 5px;
+  padding: 10px;
+}
+
+#address input[type="text"]:hover,
+#address input[type="email"]:hover,
+#address input[type="tel"]:hover,
+#address input[type="url"]:hover,
+#address textarea:hover {
+  -webkit-transition: border-color 0.3s ease-in-out;
+  -moz-transition: border-color 0.3s ease-in-out;
+  transition: border-color 0.3s ease-in-out;
+  border: 1px solid #aaa;
+}
+
+#address textarea {
+  height: 100px;
+  max-width: 100%;
+  resize: none;
+}
+
+#address input:focus,
+#address textarea:focus {
+  outline: 0;
+  border: 1px solid #aaa;
+}
+
+::-webkit-input-placeholder {
+  color: #888;
+}
+
+:-moz-placeholder {
+  color: #888;
+}
+
+::-moz-placeholder {
+  color: #888;
+}
+
+:-ms-input-placeholder {
+  color: #888;
+}
+
+#cvv {
+    background-image: linear-gradient(to left, rgba(255, 255, 255, 0.575), rgba(255, 255, 255, 0.541)),
+	url("../static/GreenKart - veg and fruits kart_files/help.png");
+    background-repeat: no-repeat;
+    background-position-x: 95%;
+    background-position-y: center
+}
+
+#cvv:hover {}
+
+.header {
+    font-size: 1.5rem;
+	color: black !important;
+}
+
+.left {
+    background-color: #ffffff;
+    padding: 2vh
+}
+
+.left img {
+    width: 2rem
+}
+
+.left .col-4 {
+    padding-left: 0
+}
+
+.card-body {
+    padding: 0 5rem 5rem 5rem;
+    background-image: url("../static/GreenKart - veg and fruits kart_files/4bg1e6u.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.paymentform{
+	display:none;
+}	
+.paymentdropdown{
+	margin-top: 15px;
+}
+.icons {
+    margin-left: auto;
+}
+
+.border {
+    border: 1px solid #dee2e6!important;
+}
+
+.paymentrow{
+	    margin: 0;
+		font: 400 12px/16px "Roboto", Helvetica, Arial, sans-serif;
+}
+
+.paymentform span {
+    color: rgb(179, 179, 179)
+}
+
+.paymentform {
+    padding: 2vh 0
+}
+
+.paymentform input {
+    border: 1px solid rgba(0, 0, 0, 0.137);
+    padding: 1vh;
+    margin-bottom: 4vh;
+    outline: none;
+    width: 100%;
+    background-color: rgb(247, 247, 247)
+}
+
+.paymentform input:focus::-webkit-input-placeholder {
+    color: transparent
+}
+
+#placeOrderButton {
+    background-color: #077915;
+    border-color: rgba(247, 6, 6, 0.58);
+    color: white;
+    width: 25%;
+    font-size: 0.9rem;
+    margin: 4vh 0 1.5vh 0;
+    padding: 1.5vh;
+    border-radius: 0;
+}
+
+#placeOrderButton[disabled]{
+  border: 1px solid #999999;
+  background-color: #cccccc;
+  color: #666666;
+}
+
+#placeOrderButton[disabled]:hover{
+  border: 1px solid #999999;
+  background-color: #cccccc;
+  color: #666666;
+}
+
+
+#checkoutAccordion{
+	margin: 1% 5% 0% 5%;
+
+}
+
+.confirmationcontainer{
+	display: -ms-flexbox;
+    display: flex;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    min-width: 0;
+    word-wrap: break-word;
+    background-color: #fff;
+    background-clip: border-box;
+    border: 1px solid rgba(0, 0, 0, 0.125);
+    border-radius: 0.25rem;
+}
+
+.checkoutcontainer{
+	margin: 10% 5% 5% 5%;
+}
+
+
+
+/***********ADDRESSS SECTION ********/
+
+
+._6ATDKp {
+    display: inline-block;
+    border: 2px solid #979797;
+    border-radius: 100%;
+    height: 16px;
+    width: 16px;
+    position: relative;
+    vertical-align: top;
+    margin-top: 3px;
+    cursor: pointer;
+}
+
+._2o59RR {
+    display: inline-block;
+    margin-left: 6px;
+    width: calc(100% - 34px);
+}
+
+.A1v2GV {
+    max-width: 848px;
+}
+
+._1i74Oi {
+    max-width: 523px;
+    float: left;
+    cursor: pointer;
+    width: 100%;
+}
+
+._22O2Xt {
+    line-height: 1.5;
+}
+
+.GeUS8P {
+    margin-top: 10px;
+    display: block;
+}
+
+._3n0HwW, .FoDyGO {
+    font-weight: 500;
+}
+
+._rmbzw {
+    text-transform: uppercase;
+    font-size: 11px;
+    color: #878787;
+    vertical-align: middle;
+    padding: 4px 7px;
+    border-radius: 2px;
+    background-color: #f0f0f0;
+    font-weight: 500;
+}
+
+._2kSC_X, ._rmbzw {
+    margin: 0 0 0 11px;
+}
+
+._2AkmmA._7UHT_c {
+    background: #fb641b;
+    box-shadow: 0 1px 2px 0 rgba(0,0,0,.2);
+    border: none;
+    color: #fff;
+}
+
+._2haq-9 {
+    visibility: hidden;
+    position: absolute;
+}
+
+._2haq-9:checked~._6ATDKp {
+    border-color: #2874f0;
+}
+
+._2haq-9:checked~._6ATDKp:before {
+    border: 2px hidden;
+    background-color: #2874f0;
+}
+._6ATDKp:before {
+    content: "";
+    border-radius: 100%;
+    height: 8px;
+    width: 8px;
+    margin: auto;
+    position: absolute;
+    top: 2px;
+    left: 2px;
+}
+
+._8J-bZE:not(._2tcMoY) {
+    display: block;
+}
+._1tkDFt {
+    border-bottom: 1px solid #f0f0f0;
+    padding: 16px 24px 12px;
+}
+._8J-bZE {
+    cursor: pointer;
+}
+
+._1tkDFt._1YWq5E {
+    background-color: #f5faff;
+}
+
+
+/***********ADDRESSS SECTION ********/
+
+
+.modal-dialog {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  align-items: center;
+}
+
+.modal-content {
+  margin: 0 auto;
+}
+
+
+/***********ACCORDIAN OPTION SECTION ********/
+
+
+.confirmOrderCard{
+	margin: 1%;
+	background-color: #dddddd !important;
+}
+
+
+/**********************ADD new Delivery Address*******************/
+
+#addNewButtonHolder {
+	margin: 1%;
+}
+
+
+div.newAddressForm {
+	display: none;
+	margin: 3%;
+	background: #F9F9F9;
+	padding: 25px;
+	box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.2), 0 5px 5px 0
+		rgba(0, 0, 0, 0.24);
+}
+
+
+/**********************ADD new Delivery Address*******************/
+
+
+
+
+
+
+
+
+
+
+
+
+

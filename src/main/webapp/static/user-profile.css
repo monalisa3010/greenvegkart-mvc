@@ -1,0 +1,43 @@
+@import
+	url(https://fonts.googleapis.com/css?family=Roboto:400,300,600,400italic)
+	;
+
+#manageProfileAccordian {
+	margin: 15% 5% 5% 5%;
+}
+
+#manageProfileAccordian button.card-header {
+	background: #077915;
+}
+
+#manageProfileAccordian button:hover {
+	background: #4ad65b;
+}
+
+#manageProfileAccordian div.newAddressForm {
+	display: none;
+	margin: 3%;
+	background: #F9F9F9;
+	padding: 25px;
+	box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.2), 0 5px 5px 0
+		rgba(0, 0, 0, 0.24);
+}
+#manageProfileAccordian div.updateExistingAddressForm {
+	display: none;
+	margin: 3%;
+	background: #F9F9F9;
+	padding: 25px;
+	box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.2), 0 5px 5px 0
+		rgba(0, 0, 0, 0.24);
+}
+#addNewButtonHolder {
+	margin: 1%;
+}
+
+caption {
+	caption-side: top !important;
+}
+
+#existingAddressTable span {
+	margin: 3%;
+}

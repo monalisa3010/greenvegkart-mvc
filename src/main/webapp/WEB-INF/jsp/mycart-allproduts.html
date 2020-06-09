@@ -1,0 +1,579 @@
+<html>
+
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>GreenKart - veg and fruits kart</title>
+	<!--<link rel="stylesheet" type="text/css" href="bootstrap.css" />
+	<link rel="stylesheet" type="text/css" href="mycart.css" />
+	<link rel="stylesheet" type="text/css" href="font.css" />
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+	<script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+	<script type='text/javascript' src="mycart.js"></script>-->
+	
+	<link rel="stylesheet" type="text/css" href="./static/bootstrap.css" />
+	<link rel="stylesheet" type="text/css" href="./static/mycartwh.css" />
+	<link rel="stylesheet" type="text/css" href="./static/font.css" />
+	<link rel="stylesheet" type="text/css" href="./static/font-awesome.min.css" />
+	<script type='text/javascript' src="./static/jquery-3.3.1.min.js"></script>
+	<script type='text/javascript' src="./static/bootstrap.min.js"></script>
+	<script type='text/javascript' src="./static/mycart.js"></script>
+	
+</head>
+
+<body>
+	<div id="root">
+		<div class="container">
+	      <header style="margin-left: -121px;">
+		  				<div class="top-header">
+					<div class="d-flex justify-content-end" style="min-height: 30px;">
+					<ul class="list-unstyled list-inline right-section">
+						<li>
+							<ul class="list-unstyled list-inline login-section">
+							   <li style="font-size: 13px;color: #666;"><i class="fa fa-phone trashicon"></i>&nbsp;&nbsp;9733892131</li>
+						   </ul>
+						  </li>
+					</ul>
+					<ul class="list-unstyled list-inline right-section">
+						<li>&nbsp</li>
+					</ul>
+					<ul class="list-unstyled list-inline right-section">
+						<li>&nbsp</li>
+					</ul>
+					<ul class="list-unstyled list-inline right-section">
+						<li>
+						  <ul class="list-unstyled list-inline login-section">
+							   <li><i class="fa fa-user trashicon"></i></li>
+							   <li class="auth">
+									<a>Login</a>
+									<span style="margin: 0 5px;">|</span>
+									<a>Sign up</a>
+							   </li>
+						   </ul>
+						  </li>
+					</ul>
+					<ul class="list-unstyled list-inline right-section">
+						<li>&nbsp</li>
+					</ul>
+					<ul class="list-unstyled list-inline right-section">
+						<li>&nbsp</li>
+					</ul>
+					</div>
+				</div>
+		  <!--bg-light-->
+		     <nav class="navbar navbar-expand-md navbar-light">
+				<a href="#" class="navbar-brand">
+					<div class="brand greenLogo">MY<span class="redLogo bigfont">K</span><span class="redLogo">ART</span></div>
+				</a>
+				<button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbarCollapse">
+					<span class="navbar-toggler-icon"></span>
+				</button>
+
+					<div class="collapse navbar-collapse justify-content-between" id="navbarCollapse">
+						<!--<div class="navbar-nav">
+							<a href="#" class="nav-item nav-link active">Home</a>
+							<div class="nav-item dropdown">
+								<a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">Messages</a>
+								<div class="dropdown-menu">
+									<a href="#" class="dropdown-item">Inbox</a>
+									<a href="#" class="dropdown-item">Sent</a>
+									<a href="#" class="dropdown-item">Drafts</a>
+								</div>
+							</div>
+						</div>-->
+						
+						<div class="navbar-nav">
+							<a href="#" class="navbar-brand font-weight-bold d-block d-lg-none">Shop By Category</a> 
+							<button type="button" data-toggle="collapse" data-target="#navbarContent" aria-controls="navbars"
+							aria-expanded="false" aria-label="Toggle navigation" class="navbar-toggler">
+								<span class="navbar-toggler-icon"></span>
+							</button>
+							
+							<div id="navbarContent" class="collapse navbar-collapse">
+									<ul class="navbar-nav mx-auto">
+										<li class="nav-item dropdown megamenu">
+										<a id="megamneu" href="" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" 
+										class="nav-link dropdown-toggle font-weight-bold text-uppercase">Shop By Category</a>
+											<div aria-labelledby="megamneu" class="dropdown-menu border-0 p-0 m-0">
+												<div class="container">
+													<div class="row bg-white rounded-0 m-0 shadow-sm">
+														<div class="col-lg-7 col-xl-8">
+															<div class="p-4">
+																<div class="row">
+																	<div class="col-lg-6 mb-4">
+																		<h6 class="font-weight-bold text-uppercase">Heading one</h6>
+																		<ul class="list-unstyled">
+																			<li class="nav-item"><a href="" class="nav-link text-small pb-0">Home</a></li>
+																			<li class="nav-item"><a href="" class="nav-link text-small pb-0 ">About</a></li>
+																			<li class="nav-item"><a href="" class="nav-link text-small pb-0 ">Help</a></li>
+																			<li class="nav-item"><a href="" class="nav-link text-small pb-0 ">Account</a></li>
+																		</ul>
+																	</div>
+																	<div class="col-lg-6 mb-4">
+																		<h6 class="font-weight-bold text-uppercase">Heading two</h6>
+																		<ul class="list-unstyled">
+																			<li class="nav-item"><a href="" class="nav-link text-small pb-0 ">Home</a></li>
+																			<li class="nav-item"><a href="" class="nav-link text-small pb-0 ">About</a></li>
+																			<li class="nav-item"><a href="" class="nav-link text-small pb-0 ">Help</a></li>
+																			<li class="nav-item"><a href="" class="nav-link text-small pb-0 ">Account</a></li>
+																		</ul>
+																	</div>
+																	<div class="col-lg-6 mb-4">
+																		<h6 class="font-weight-bold text-uppercase">Heading three</h6>
+																		<ul class="list-unstyled">
+																			<li class="nav-item"><a href="" class="nav-link text-small pb-0 ">Home</a></li>
+																			<li class="nav-item"><a href="" class="nav-link text-small pb-0 ">About</a></li>
+																			<li class="nav-item"><a href="" class="nav-link text-small pb-0 ">Help</a></li>
+																			<li class="nav-item"><a href="" class="nav-link text-small pb-0 ">Account</a></li>
+																		</ul>
+																	</div>
+																	<div class="col-lg-6 mb-4">
+																		<h6 class="font-weight-bold text-uppercase">Heading four</h6>
+																		<ul class="list-unstyled">
+																			<li class="nav-item"><a href="" class="nav-link text-small pb-0 ">Home</a></li>
+																			<li class="nav-item"><a href="" class="nav-link text-small pb-0 ">About</a></li>
+																			<li class="nav-item"><a href="" class="nav-link text-small pb-0 ">Help</a></li>
+																			<li class="nav-item"><a href="" class="nav-link text-small pb-0 ">Account</a></li>
+																		</ul>
+																	</div>
+																</div>
+															</div>
+														</div>
+													</div>
+												</div>
+											</div>
+										</li>
+									</ul>
+							</div>
+						</div>
+						<!--<form class="form-inline">
+							<div class="input-group">                    
+								<input type="text" class="form-control" placeholder="Search">
+								<div class="input-group-append">
+									<button type="button" class="btn btn-secondary"><i class="fa fa-search"></i></button>
+								</div>
+							</div>
+						</form>-->
+
+					<div class="navbar-nav search">
+						<div class="search">
+							<a class="mobile-search" href="#"><img src="./static/GreenKart - veg and fruits kart_files/search-green.png" alt="search"></a>
+							<form action="#" method="get" class="search-form">
+								<a class="back-button" href="#"><img src="./static/GreenKart - veg and fruits kart_files/back.png" alt="back"></a>
+								<input type="search" placeholder="Search for Vegetables and Fruits" class="search-keyword">
+								<button class="search-button" type="submit"></button>
+							</form>
+						</div>
+					</div>
+						
+						<div class="navbar-nav mycart">
+							<div class="cart-icon-holder">					
+								<span class="fa fa-2x fa-shopping-basket my-cart-icon">
+									<span class="badge badge-notify my-cart-badge"></span>
+								</span>
+								<span class="hidden-xs hidden-sm" style="display: inline-block">
+									<span class="cartprice">Total:&nbsp;&nbsp;<span id="itemsTotalAmount">&nbsp;</span></span>
+								</span>	
+							</div>
+						</div>
+						
+					<!--<div class="navbar-nav">
+							<div class="cart-info">
+								<table>
+									<tbody>
+										<tr>
+											<td>Price</td>
+											<td>:</td>
+											<td><strong id="itemsTotalAmount">0</strong></td>
+										</tr>
+									</tbody>
+								</table>
+							</div>
+						</div>
+						
+						<div class="navbar-nav">
+							<div class="d-flex justify-content-end" style="min-height: 30px;">
+								   <ul class="list-unstyled list-inline right-section">
+									  <li>
+										 <ul class="list-unstyled list-inline login-section">
+											<li style="font-size: 13px;color: #666;"><i class="fa fa-phone trashicon"></i>&nbsp;&nbsp;9733892131</li>
+										 </ul>
+									  </li>
+								   </ul>
+								   <ul class="list-unstyled list-inline right-section">
+									  <li>&nbsp</li>
+								   </ul>
+								   <ul class="list-unstyled list-inline right-section">
+									  <li>&nbsp</li>
+								   </ul>
+								   <ul class="list-unstyled list-inline right-section">
+									  <li>
+										 <ul class="list-unstyled list-inline login-section">
+											<li><i class="fa fa-user trashicon"></i></li>
+											<li class="auth">
+											   <a>Login</a>
+											   <span style="margin: 0 5px;">|</span>
+											   <a>Sign up</a>
+											</li>
+										 </ul>
+									  </li>
+								   </ul>
+								   <ul class="list-unstyled list-inline right-section">
+									  <li>&nbsp</li>
+								   </ul>
+								   <ul class="list-unstyled list-inline right-section">
+									  <li>&nbsp</li>
+								   </ul>
+							</div>
+							
+						</div>-->
+					</div>
+				</nav>			
+				
+			</header>
+			<div class="products-wrapper">
+				<div class="panel panel-default mycart_section">
+				<div class="panel-heading">Vegetables</div>
+					<div class="panel-body">
+						<div class="products">
+							<div class="product">
+								<div class="product-image"><img src="./static/GreenKart - veg and fruits kart_files/broccoli.jpg" alt="Brocolli - 1 Kg"></div>
+								<h4 class="product-name">Brocolli - 1 Kg</h4>
+								<p class="product-price">120</p>
+								<div class="stepper-input"><a href="javascript:void(0);" class="decrement">–</a>
+									<input type="number" class="quantity" value="1" readonly><a href="javascript:void(0);" class="increment">+</a></div>
+								<div class="product-action">
+									<button class="my-cart-add-btn" type="button" data-addtocart="false" data-id="1" data-addtocart="false" data-name="Brocolli" data-summary="summary 1" data-price="120" data-quantity="1" data-image="./static/GreenKart - veg and fruits kart_files/broccoli.jpg">ADD TO CART</button>
+								</div>
+							</div>
+							<div class="product">
+								<div class="product-image"><img src="./static/GreenKart - veg and fruits kart_files/cauliflower.jpg" alt="Cauliflower - 1 Kg"></div>
+								<h4 class="product-name">Cauliflower - 1 Kg</h4>
+								<p class="product-price">60</p>
+								<div class="stepper-input"><a href="javascript:void(0);" class="decrement">–</a>
+									<input type="number" class="quantity" value="1" readonly><a href="javascript:void(0);" class="increment">+</a></div>
+								<div class="product-action">
+									<button class="my-cart-add-btn" type="button" data-id="2" data-name="Cauliflower" data-summary="Cauliflower" data-price="60" data-quantity="1" data-image="./static/GreenKart - veg and fruits kart_files/cauliflower.jpg">ADD TO CART</button>
+								</div>
+							</div>
+							<div class="product">
+								<div class="product-image"><img src="./static/GreenKart - veg and fruits kart_files/cucumber.jpg" alt="Cucumber - 1 Kg"></div>
+								<h4 class="product-name">Cucumber - 1 Kg</h4>
+								<p class="product-price">48</p>
+								<div class="stepper-input"><a href="javascript:void(0);" class="decrement">–</a>
+									<input type="number" class="quantity" value="1" readonly><a href="javascript:void(0);" class="increment">+</a></div>
+								<div class="product-action">
+									<button class="my-cart-add-btn" type="button" data-id="3" data-name="Cucumber" data-summary="Cucumber" data-price="48" data-quantity="1" data-image="./static/GreenKart - veg and fruits kart_files/cucumber.jpg">ADD TO CART</button>
+								</div>
+							</div>
+							<div class="product">
+								<div class="product-image"><img src="./static/GreenKart - veg and fruits kart_files/beetroot.jpg" alt="Beetroot - 1 Kg"></div>
+								<h4 class="product-name">Beetroot - 1 Kg</h4>
+								<p class="product-price">32</p>
+								<div class="stepper-input"><a href="javascript:void(0);" class="decrement">–</a>
+									<input type="number" class="quantity" value="1" readonly><a href="javascript:void(0);" class="increment">+</a></div>
+								<div class="product-action">
+									<button class="my-cart-add-btn" type="button" data-id="4" data-name="Beetroot" data-summary="Beetroot" data-price="32" data-quantity="1" data-image="./static/GreenKart - veg and fruits kart_files/beetroot.jpg">ADD TO CART</button>
+								</div>
+							</div>
+							<div class="product">
+								<div class="product-image"><img src="./static/GreenKart - veg and fruits kart_files/carrots.jpg" alt="Carrot - 1 Kg"></div>
+								<h4 class="product-name">Carrot - 1 Kg</h4>
+								<p class="product-price">56</p>
+								<div class="stepper-input"><a href="javascript:void(0);" class="decrement">–</a>
+									<input type="number" class="quantity" value="1" readonly><a href="javascript:void(0);" class="increment">+</a></div>
+								<div class="product-action">
+									<button class="my-cart-add-btn" type="button" data-id="5" data-name="Carrot" data-summary="Carrot" data-price="56" data-quantity="1" data-image="./static/GreenKart - veg and fruits kart_files/carrots.jpg">ADD TO CART</button>
+								</div>
+							</div>
+							<div class="product">
+								<div class="product-image"><img src="./static/GreenKart - veg and fruits kart_files/tomato.jpg" alt="Tomato - 1 Kg"></div>
+								<h4 class="product-name">Tomato - 1 Kg</h4>
+								<p class="product-price">16</p>
+								<div class="stepper-input"><a href="javascript:void(0);" class="decrement">–</a>
+									<input type="number" class="quantity" value="1" readonly><a href="javascript:void(0);" class="increment">+</a></div>
+								<div class="product-action">
+									<button class="my-cart-add-btn" type="button" data-id="6" data-name="Tomato" data-summary="Tomato" data-price="16" data-quantity="1" data-image="./static/GreenKart - veg and fruits kart_files/tomato.jpg">ADD TO CART</button>
+								</div>
+							</div>
+							<div class="product">
+								<div class="product-image"><img src="./static/GreenKart - veg and fruits kart_files/beans.jpg" alt="Beans - 1 Kg"></div>
+								<h4 class="product-name">Beans - 1 Kg</h4>
+								<p class="product-price">82</p>
+								<div class="stepper-input"><a href="javascript:void(0);" class="decrement">–</a>
+									<input type="number" class="quantity" value="1" readonly><a href="javascript:void(0);" class="increment">+</a></div>
+								<div class="product-action">
+									<button class="my-cart-add-btn" type="button" data-id="7" data-name="Beans" data-summary="Beans" data-price="82" data-quantity="1" data-image="./static/GreenKart - veg and fruits kart_files/beans.jpg">ADD TO CART</button>
+								</div>
+							</div>
+							<div class="product">
+								<div class="product-image"><img src="./static/GreenKart - veg and fruits kart_files/brinjal.jpg" alt="Brinjal - 1 Kg"></div>
+								<h4 class="product-name">Brinjal - 1 Kg</h4>
+								<p class="product-price">35</p>
+								<div class="stepper-input"><a href="javascript:void(0);" class="decrement">–</a>
+									<input type="number" class="quantity" value="1" readonly><a href="javascript:void(0);" class="increment">+</a></div>
+								<div class="product-action">
+									<button class="my-cart-add-btn" type="button" data-id="8" data-name="Brinjal" data-summary="Brinjal" data-price="35" data-quantity="1" data-image="./static/GreenKart - veg and fruits kart_files/brinjal.jpg">ADD TO CART</button>
+								</div>
+							</div>
+							<div class="product">
+								<div class="product-image"><img src="./static/GreenKart - veg and fruits kart_files/capsicum.jpg" alt="Capsicum"></div>
+								<h4 class="product-name">Capsicum</h4>
+								<p class="product-price">60</p>
+								<div class="stepper-input"><a href="javascript:void(0);" class="decrement">–</a>
+									<input type="number" class="quantity" value="1" readonly><a href="javascript:void(0);" class="increment">+</a></div>
+								<div class="product-action">
+									<button class="my-cart-add-btn" type="button" data-id="9" data-name="product 1" data-summary="summary 1" data-price="60" data-quantity="1" data-image="./static/GreenKart - veg and fruits kart_files/capsicum.jpg">ADD TO CART</button>
+								</div>
+							</div>
+							<div class="product">
+								<div class="product-image"><img src="./static/GreenKart - veg and fruits kart_files/button-mushroom.jpg" alt="Mushroom - 1 Kg"></div>
+								<h4 class="product-name">Mushroom - 1 Kg</h4>
+								<p class="product-price">75</p>
+								<div class="stepper-input"><a href="javascript:void(0);" class="decrement">–</a>
+									<input type="number" class="quantity" value="1" readonly><a href="javascript:void(0);" class="increment">+</a></div>
+								<div class="product-action">
+									<button class="my-cart-add-btn" type="button" data-id="10" data-name="product 1" data-summary="summary 1" data-price="75" data-quantity="1" data-image="./static/GreenKart - veg and fruits kart_files/button-mushroom.jpg">ADD TO CART</button>
+								</div>
+							</div>
+							<div class="product">
+								<div class="product-image"><img src="./static/GreenKart - veg and fruits kart_files/potato.jpg" alt="Potato - 1 Kg"></div>
+								<h4 class="product-name">Potato - 1 Kg</h4>
+								<p class="product-price">22</p>
+								<div class="stepper-input"><a href="javascript:void(0);" class="decrement">–</a>
+									<input type="number" class="quantity" value="1" readonly><a href="javascript:void(0);" class="increment">+</a></div>
+								<div class="product-action">
+									<button class="my-cart-add-btn" type="button" data-id="11" data-name="product 1" data-summary="summary 1" data-price="22" data-quantity="1" data-image="./static/GreenKart - veg and fruits kart_files/potato.jpg">ADD TO CART</button>
+								</div>
+							</div>
+							<div class="product">
+								<div class="product-image"><img src="./static/GreenKart - veg and fruits kart_files/pumpkin.jpg" alt="Pumpkin - 1 Kg"></div>
+								<h4 class="product-name">Pumpkin - 1 Kg</h4>
+								<p class="product-price">48</p>
+								<div class="stepper-input"><a href="javascript:void(0);" class="decrement">–</a>
+									<input type="number" class="quantity" value="1" readonly><a href="javascript:void(0);" class="increment">+</a></div>
+								<div class="product-action">
+									<button class="my-cart-add-btn" type="button" data-id="12" data-name="product 1" data-summary="summary 1" data-price="48" data-quantity="1" data-image="./static/GreenKart - veg and fruits kart_files/pumpkin.jpg">ADD TO CART</button>
+								</div>
+							</div>
+							<div class="product">
+								<div class="product-image"><img src="./static/GreenKart - veg and fruits kart_files/corn.jpg" alt="Corn - 1 Kg"></div>
+								<h4 class="product-name">Corn - 1 Kg</h4>
+								<p class="product-price">75</p>
+								<div class="stepper-input"><a href="javascript:void(0);" class="decrement">–</a>
+									<input type="number" class="quantity" value="1" readonly><a href="javascript:void(0);" class="increment">+</a></div>
+								<div class="product-action">
+									<button class="my-cart-add-btn" type="button" data-id="13" data-name="product 1" data-summary="summary 1" data-price="75" data-quantity="1" data-image="./static/GreenKart - veg and fruits kart_files/corn.jpg">ADD TO CART</button>
+								</div>
+							</div>
+							<div class="product">
+								<div class="product-image"><img src="./static/GreenKart - veg and fruits kart_files/onion.jpg" alt="Onion - 1 Kg"></div>
+								<h4 class="product-name">Onion - 1 Kg</h4>
+								<p class="product-price">16</p>
+								<div class="stepper-input"><a href="javascript:void(0);" class="decrement">–</a>
+									<input type="number" class="quantity" value="1" readonly><a href="javascript:void(0);" class="increment">+</a></div>
+								<div class="product-action">
+									<button class="my-cart-add-btn" type="button" data-id="14" data-name="product 1" data-summary="summary 1" data-price="16" data-quantity="1" data-image="./static/GreenKart - veg and fruits kart_files/onion.jpg">ADD TO CART</button>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="panel panel-default mycart_section">
+				<div class="panel-heading">Fruits</div>
+					<div class="panel-body">
+						<div class="products">
+							<div class="product">
+								<div class="product-image"><img src="./static/GreenKart - veg and fruits kart_files/apple.jpg" alt="Apple - 1 Kg"></div>
+								<h4 class="product-name">Apple - 1 Kg</h4>
+								<p class="product-price">72</p>
+								<div class="stepper-input"><a href="javascript:void(0);" class="decrement">–</a>
+									<input type="number" class="quantity" value="1" readonly><a href="javascript:void(0);" class="increment">+</a></div>
+								<div class="product-action">
+									<button class="my-cart-add-btn" type="button" data-id="15" data-name="product 1" data-summary="summary 1" data-price="72" data-quantity="1" data-image="./static/GreenKart - veg and fruits kart_files/apple.jpg">ADD TO CART</button>
+								</div>
+							</div>
+							<div class="product">
+								<div class="product-image"><img src="./static/GreenKart - veg and fruits kart_files/banana.jpg" alt="Banana - 1 Kg"></div>
+								<h4 class="product-name">Banana - 1 Kg</h4>
+								<p class="product-price">45</p>
+								<div class="stepper-input"><a href="javascript:void(0);" class="decrement">–</a>
+									<input type="number" class="quantity" value="1" readonly><a href="javascript:void(0);" class="increment">+</a></div>
+								<div class="product-action">
+									<button class="my-cart-add-btn" type="button" data-id="16" data-name="product 1" data-summary="summary 1" data-price="45" data-quantity="1" data-image="./static/GreenKart - veg and fruits kart_files/banana.jpg">ADD TO CART</button>
+								</div>
+							</div>
+							<div class="product">
+								<div class="product-image"><img src="./static/GreenKart - veg and fruits kart_files/grapes.jpg" alt="Grapes - 1 Kg"></div>
+								<h4 class="product-name">Grapes - 1 Kg</h4>
+								<p class="product-price">60</p>
+								<div class="stepper-input"><a href="javascript:void(0);" class="decrement">–</a>
+									<input type="number" class="quantity" value="1" readonly><a href="javascript:void(0);" class="increment">+</a></div>
+								<div class="product-action">
+									<button class="my-cart-add-btn" type="button" data-id="17" data-name="product 1" data-summary="summary 1" data-price="60" data-quantity="1" data-image="./static/GreenKart - veg and fruits kart_files/grapes.jpg">ADD TO CART</button>
+								</div>
+							</div>
+							<div class="product">
+								<div class="product-image"><img src="./static/GreenKart - veg and fruits kart_files/mango.jpg" alt="Mango - 1 Kg"></div>
+								<h4 class="product-name">Mango - 1 Kg</h4>
+								<p class="product-price">75</p>
+								<div class="stepper-input"><a href="javascript:void(0);" class="decrement">–</a>
+									<input type="number" class="quantity" value="1" readonly><a href="javascript:void(0);" class="increment">+</a></div>
+								<div class="product-action">
+									<button class="my-cart-add-btn" type="button" data-id="18" data-name="product 1" data-summary="summary 1" data-price="75" data-quantity="1" data-image="./static/GreenKart - veg and fruits kart_files/mango.jpg">ADD TO CART</button>
+								</div>
+							</div>
+							<div class="product">
+								<div class="product-image"><img src="./static/GreenKart - veg and fruits kart_files/musk-melon.jpg" alt="Musk Melon - 1 Kg"></div>
+								<h4 class="product-name">Musk Melon - 1 Kg</h4>
+								<p class="product-price">36</p>
+								<div class="stepper-input"><a href="javascript:void(0);" class="decrement">–</a>
+									<input type="number" class="quantity" value="1" readonly><a href="javascript:void(0);" class="increment">+</a></div>
+								<div class="product-action">
+									<button class="my-cart-add-btn" type="button" data-id="19" data-name="product 1" data-summary="summary 1" data-price="36" data-quantity="1" data-image="./static/GreenKart - veg and fruits kart_files/musk-melon.jpg">ADD TO CART</button>
+								</div>
+							</div>
+							<div class="product">
+								<div class="product-image"><img src="./static/GreenKart - veg and fruits kart_files/orange.jpg" alt="Orange - 1 Kg"></div>
+								<h4 class="product-name">Orange - 1 Kg</h4>
+								<p class="product-price">75</p>
+								<div class="stepper-input"><a href="javascript:void(0);" class="decrement">–</a>
+									<input type="number" class="quantity" value="1" readonly><a href="javascript:void(0);" class="increment">+</a></div>
+								<div class="product-action">
+									<button class="my-cart-add-btn" type="button" data-id="20" data-name="product 1" data-summary="summary 1" data-price="75" data-quantity="1" data-image="./static/GreenKart - veg and fruits kart_files/orange.jpg">ADD TO CART</button>
+								</div>
+							</div>
+							<div class="product">
+								<div class="product-image"><img src="./static/GreenKart - veg and fruits kart_files/pears.jpg" alt="Pears - 1 Kg"></div>
+								<h4 class="product-name">Pears - 1 Kg</h4>
+								<p class="product-price">69</p>
+								<div class="stepper-input"><a href="javascript:void(0);" class="decrement">–</a>
+									<input type="number" class="quantity" value="1" readonly><a href="javascript:void(0);" class="increment">+</a></div>
+								<div class="product-action">
+									<button class="my-cart-add-btn" type="button" data-id="21" data-name="product 1" data-summary="summary 1" data-price="69" data-quantity="1" data-image="./static/GreenKart - veg and fruits kart_files/pears.jpg">ADD TO CART</button>
+								</div>
+							</div>
+							<div class="product">
+								<div class="product-image"><img src="./static/GreenKart - veg and fruits kart_files/pomegranate.jpg" alt="Pomegranate - 1 Kg"></div>
+								<h4 class="product-name">Pomegranate - 1 Kg</h4>
+								<p class="product-price">95</p>
+								<div class="stepper-input"><a href="javascript:void(0);" class="decrement">–</a>
+									<input type="number" class="quantity" value="1" readonly><a href="javascript:void(0);" class="increment">+</a></div>
+								<div class="product-action">
+									<button class="my-cart-add-btn" type="button" data-id="22" data-name="product 1" data-summary="summary 1" data-price="95" data-quantity="1" data-image="./static/GreenKart - veg and fruits kart_files/pomegranate.jpg">ADD TO CART</button>
+								</div>
+							</div>
+							<div class="product">
+								<div class="product-image"><img src="./static/GreenKart - veg and fruits kart_files/raspberry.jpg" alt="Raspberry - 1/4 Kg"></div>
+								<h4 class="product-name">Raspberry - 1/4 Kg</h4>
+								<p class="product-price">160</p>
+								<div class="stepper-input"><a href="javascript:void(0);" class="decrement">–</a>
+									<input type="number" class="quantity" value="1" readonly><a href="javascript:void(0);" class="increment">+</a></div>
+								<div class="product-action">
+									<button class="my-cart-add-btn" type="button" data-id="23" data-name="product 1" data-summary="summary 1" data-price="160" data-quantity="1" data-image="./static/GreenKart - veg and fruits kart_files/raspberry.jpg">ADD TO CART</button>
+								</div>
+							</div>
+							<div class="product">
+								<div class="product-image"><img src="./static/GreenKart - veg and fruits kart_files/strawberry.jpg" alt="Strawberry - 1/4 Kg"></div>
+								<h4 class="product-name">Strawberry - 1/4 Kg</h4>
+								<p class="product-price">180</p>
+								<div class="stepper-input"><a href="javascript:void(0);" class="decrement">–</a>
+									<input type="number" class="quantity" value="1" readonly><a href="javascript:void(0);" class="increment">+</a></div>
+								<div class="product-action">
+									<button class="my-cart-add-btn" type="button" data-id="24" data-name="product 1" data-summary="summary 1" data-price="180" data-quantity="1" data-image="./static/GreenKart - veg and fruits kart_files/strawberry.jpg">ADD TO CART</button>
+								</div>
+							</div>
+							<div class="product">
+								<div class="product-image"><img src="./static/GreenKart - veg and fruits kart_files/water-melon.jpg" alt="Water Melon - 1 Kg"></div>
+								<h4 class="product-name">Water Melon - 1 Kg</h4>
+								<p class="product-price">28</p>
+								<div class="stepper-input"><a href="javascript:void(0);" class="decrement">–</a>
+									<input type="number" class="quantity" value="1" readonly><a href="javascript:void(0);" class="increment">+</a></div>
+								<div class="product-action">
+									<button class="my-cart-add-btn" type="button" data-id="25" data-name="product 1" data-summary="summary 1" data-price="28" data-quantity="1" data-image="./static/GreenKart - veg and fruits kart_files/water-melon.jpg">ADD TO CART</button>
+								</div>
+							</div>
+							<div class="product">
+								<div class="product-image"><img src="./static/GreenKart - veg and fruits kart_files/almonds.jpg" alt="Almonds - 1/4 Kg"></div>
+								<h4 class="product-name">Almonds - 1/4 Kg</h4>
+								<p class="product-price">200</p>
+								<div class="stepper-input"><a href="javascript:void(0);" class="decrement">–</a>
+									<input type="number" class="quantity" value="1" readonly><a href="javascript:void(0);" class="increment">+</a></div>
+								<div class="product-action">
+									<button class="my-cart-add-btn" type="button" data-id="26" data-name="product 1" data-summary="summary 1" data-price="200" data-quantity="1" data-image="./static/GreenKart - veg and fruits kart_files/almonds.jpg">ADD TO CART</button>
+								</div>
+							</div>
+							<div class="product">
+								<div class="product-image"><img src="./static/GreenKart - veg and fruits kart_files/pista.jpg" alt="Pista - 1/4 Kg"></div>
+								<h4 class="product-name">Pista - 1/4 Kg</h4>
+								<p class="product-price">190</p>
+								<div class="stepper-input"><a href="javascript:void(0);" class="decrement">–</a>
+									<input type="number" class="quantity" value="1" readonly><a href="javascript:void(0);" class="increment">+</a></div>
+								<div class="product-action">
+									<button class="my-cart-add-btn" type="button" data-id="27" data-name="product 1" data-summary="summary 1" data-price="190" data-quantity="1" data-image="./static/GreenKart - veg and fruits kart_files/pista.jpg">ADD TO CART</button>
+								</div>
+							</div>
+							<div class="product">
+								<div class="product-image"><img src="./static/GreenKart - veg and fruits kart_files/nuts-mixture.jpg" alt="Nuts Mixture - 1 Kg"></div>
+								<h4 class="product-name">Nuts Mixture - 1 Kg</h4>
+								<p class="product-price">950</p>
+								<div class="stepper-input"><a href="javascript:void(0);" class="decrement">–</a>
+									<input type="number" class="quantity" value="1" readonly><a href="javascript:void(0);" class="increment">+</a></div>
+								<div class="product-action">
+									<button class="my-cart-add-btn" type="button" data-id="28" data-name="product 1" data-summary="summary 1" data-price="950" data-quantity="1" data-image="./static/GreenKart - veg and fruits kart_files/nuts-mixture.jpg">ADD TO CART</button>
+								</div>
+							</div>
+							<div class="product">
+								<div class="product-image"><img src="./static/GreenKart - veg and fruits kart_files/cashews.jpg" alt="Cashews - 1 Kg"></div>
+								<h4 class="product-name">Cashews - 1 Kg</h4>
+								<p class="product-price">650</p>
+								<div class="stepper-input"><a href="javascript:void(0);" class="decrement">–</a>
+									<input type="number" class="quantity" value="1" readonly><a href="javascript:void(0);" class="increment">+</a></div>
+								<div class="product-action">
+									<button class="my-cart-add-btn" type="button" data-id="29" data-name="product 1" data-summary="summary 1" data-price="650" data-quantity="1" data-image="./static/GreenKart - veg and fruits kart_files/cashews.jpg">ADD TO CART</button>
+								</div>
+							</div>
+							<div class="product">
+								<div class="product-image"><img src="./static/GreenKart - veg and fruits kart_files/walnuts.jpg" alt="Walnuts - 1/4 Kg"></div>
+								<h4 class="product-name">Walnuts - 1/4 Kg</h4>
+								<p class="product-price">170</p>
+								<div class="stepper-input"><a href="javascript:void(0);" class="decrement">–</a>
+									<input type="number" class="quantity" value="1" readonly><a href="javascript:void(0);" class="increment">+</a></div>
+								<div class="product-action">
+									<button class="my-cart-add-btn" type="button" data-id="30" data-name="product 1" data-summary="summary 1" data-price="170" data-quantity="1" data-image="./static/GreenKart - veg and fruits kart_files/walnuts.jpg">ADD TO CART</button>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+	</section>
+			<footer>
+				<p>© 2019 <strong>GreenKart</strong> - buy veg and fruits online</p>
+			</footer>
+			<div class="modal fade" id="my-cart-modal" tabindex="-1" aria-labelledby="myModalLabel">
+				<div class="modal-dialog">
+					<div class="modal-content">
+						<div class="modal-header">
+							<!--<h4 class="modal-title" id="myModalLabel"><span class="fa fa-xs fa-shopping-cart"></span> My Cart</h4></div>
+					<button type="button" class="close" data-dismiss="modal">&times;</button>-->
+							<h5 class="modal-title">My Cart</h5>
+							<button type="button" class="close" data-dismiss="modal">&times;</button>
+						</div>
+						<div class="modal-body">
+							<!--<table class="table table-hover table-responsive" id="my-cart-table"></table>-->
+							<table class="table table-hover table-responsive" id="my-cart-table"></table>
+						</div>
+						<div class="modal-footer">
+							<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+							<button type="button" class="btn btn-primary my-cart-checkout">Checkout</button>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</body>
+
+</html>
